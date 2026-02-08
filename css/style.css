@@ -11,7 +11,9 @@
 body {
     background: #F9F9F9;
     color: #FFFFFF;
+    min-width: 320px;
 }
+
 
 .header {
     padding: 28px 0;
@@ -42,33 +44,33 @@ body {
 .header__nav-list {
     display: flex;
     align-items: center;
-    gap: 120px;
+    gap: 80px;
 }
 
 .header__nav-search {
-    
+
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .header__nav-shop {
-    
+
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .header__nav-list_item-link {
     color: #FFFFFF;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: clamp(0.938rem, 0.816rem + 0.61vw, 1.25rem);
 }
 
 .banner {
     background: url(../img/banner.png) no-repeat center bottom / cover;
-    height: 732px;
+    height: 90svh;
 }
 
 .banner__wrap {
@@ -76,7 +78,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 
@@ -84,7 +86,7 @@ body {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     font-style: Medium;
-    font-size: 96px;
+    font-size: clamp(2.5rem, 1.159rem + 6.71vw, 6rem);
     color: #FFFFFF;
 }
 
@@ -97,7 +99,7 @@ body {
     text-align: center;
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(0.625rem, 0.385rem + 1.2vw, 1.25rem);
     color: #000000;
     border-radius: 12px;
 }
@@ -115,7 +117,7 @@ body {
     margin: 100px 0 40px;
     font-weight: 700;
     font-style: Bold;
-    font-size: 40px;
+    font-size: clamp(1.563rem, 1.203rem + 1.8vw, 2.5rem);
     color: #303030;
 }
 
@@ -127,17 +129,18 @@ body {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     font-style: Medium;
-    font-size: 20px;
+    font-size: clamp(0.938rem, 0.818rem + 0.6vw, 1.25rem);
     leading-trim: NONE;
     line-height: 40px;
     letter-spacing: 0%;
     text-align: center;
     color: #303030;
+    word-break: break-all;
 
 }
 
 
-.perfume__left-title {
+.perfume__left-title_collection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,13 +148,13 @@ body {
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     font-style: Bold;
-    font-size: 40px;
+    font-size: clamp(1.25rem, 0.771rem + 2.4vw, 2.5rem);
     line-height: 75px;
     color: #303030;
 }
 
 .perfume {
-    margin: 100px 0 100px;
+    margin: 50px 0 60px;
 }
 
 .perfume__wrap {
@@ -172,7 +175,7 @@ body {
 .perfume__left-title {
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: clamp(1.25rem, 0.771rem + 2.4vw, 2.5rem);
     color: #303030;
 }
 
@@ -180,18 +183,19 @@ body {
     font-family: "Quicksand", sans-serif;
     font-weight: 600;
     font-style: SemiBold;
-    font-size: 32px;
+    font-size: clamp(1.25rem, 0.771rem + 2.4vw, 2.5rem);
     leading-trim: NONE;
     line-height: 30px;
     letter-spacing: 0%;
     color: #303030;
+    word-break: break-all;
 }
 
 .perfume__left-desc {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     font-style: Medium;
-    font-size: 20px;
+    font-size: clamp(0.938rem, 0.818rem + 0.6vw, 1.25rem);
     leading-trim: NONE;
     line-height: 30px;
     letter-spacing: 0%;
@@ -202,13 +206,13 @@ body {
     display: inline-block;
     max-width: 160px;
     height: 75px;
-    width: 100%; 
+    width: 100%;
     padding: 23px;
     background: #000000;
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     font-style: Bold;
-    font-size: 20px;
+    font-size: clamp(0.938rem, 0.818rem + 0.6vw, 1.25rem);
     text-align: center;
     border-radius: 12px;
     color: #FFFFFF;
@@ -238,7 +242,7 @@ body {
 .footer__nav-list_item-attributes {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
 }
 
 
@@ -247,6 +251,15 @@ body {
     align-items: center;
     gap: 120px;
 }
+
+.footer__nav-list_item {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+
+}
+
 
 .footer__nav-search {
     display: flex;
@@ -266,5 +279,5 @@ body {
     color: #FFFFFF;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: clamp(0.938rem, 0.818rem + 0.6vw, 1.25rem);
 }
