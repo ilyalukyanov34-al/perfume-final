@@ -108,6 +108,8 @@ body {
     margin: 100px 0 40px;
 }
 
+
+
 .present__center-title {
     display: flex;
     flex-direction: column;
@@ -131,7 +133,7 @@ body {
     font-style: Medium;
     font-size: clamp(0.938rem, 0.818rem + 0.6vw, 1.25rem);
     leading-trim: NONE;
-    line-height: 40px;
+    line-height: 22px;
     letter-spacing: 0%;
     text-align: center;
     color: #303030;
@@ -197,7 +199,7 @@ body {
     font-style: Medium;
     font-size: clamp(0.938rem, 0.818rem + 0.6vw, 1.25rem);
     leading-trim: NONE;
-    line-height: 30px;
+    line-height: 20px;
     letter-spacing: 0%;
     color: #303030;
 }
