@@ -196,8 +196,8 @@
     }
 
 
-    .header__nav-search {
-        margin-right: 130px;
+    .header__nav-search, .header__nav-shop {
+        margin: 0 55px;
     }
 
     .header__nav-list {
